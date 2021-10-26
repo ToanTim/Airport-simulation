@@ -104,7 +104,7 @@ Error_code Queue::serve_and_retrieve(Queue_entry &item)
 
   if(count<0) return underflow;
   item=entry[front];
-  cout<<entry[front];
+  //cout<<entry[front];
   if(count<=0) return underflow;
   count--;
   front = ((front + 1) == maxqueue) ? 0 : (front + 1);

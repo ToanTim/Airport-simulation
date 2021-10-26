@@ -1,9 +1,12 @@
+#ifndef _PLANE_H
+#define _PLANE_H
+
 enum Plane_status {null, arriving, departing};
 
 class Plane {
 public:
-   Plane();
    Plane(int flt, int time, Plane_status status);
+   Plane();
    void refuse() const;
    void land(int time) const;
    void fly(int time) const;
@@ -14,3 +17,5 @@ private:
    int clock_start;
    Plane_status state;
 };
+
+#endif

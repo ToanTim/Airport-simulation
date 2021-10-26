@@ -94,7 +94,7 @@ Uses:  class Extended_queue.
       takeoff.retrieve(moving);
       takeoff_wait += time - moving.started();
       num_takeoffs++;
-      in_progress = takeoff;
+      in_progress = takeoff1;
       takeoff.serve();
    }
 

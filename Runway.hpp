@@ -1,6 +1,8 @@
-#include"queue.hpp"
+#ifndef _RUNWAY_H
+#define _RUNWAY_H
 #include"Plane.hpp"
-enum Runway_activity {idle, land, takeoff};
+#include"Queue.hpp"
+enum Runway_activity {idle, land, takeoff1};
 
 class Runway {
 public:
@@ -26,3 +28,5 @@ private:
    int takeoff_wait;             //  total time of planes waiting to take off
    int idle_time;                //  total time runway is idle
 };
+
+#endif

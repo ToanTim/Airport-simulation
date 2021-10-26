@@ -1,6 +1,7 @@
 #include"Utility.hpp"
+#include"Plane.hpp"
 
-typedef double Queue_entry;
+typedef Plane Queue_entry;
 const int maxqueue=100;
 
 class Queue {
